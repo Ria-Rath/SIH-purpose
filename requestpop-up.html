@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AAI</title>
+	  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+		
+		button{
+			border-radius: 8px;
+			outline:none;
+			padding:2px
+			font-size: 20px;
+		  }
+		button:active {
+              transform: translateY(5px);
+              outline:none;
+              }
+            .badge{
+            	font-size: 18px;
+            	background-color: #0577e9bf;
+            }
+            #head{
+            	border:3px solid black;
+            	margin-top: 20px;
+            	margin-bottom: 20px;
+            	margin-left:25%;
+            	padding-left: 30px;
+            	padding-right: 30px;
+            	padding-bottom: 5px;
+            	padding-top: 5px;
+            	width:70%; 
+            	font-weight:bold;
+            	font-family: Serif;
+            	color:red;
+            	background-color: #08220852;
+            	 
+            }
+            #myDIV{
+            	  background: linear-gradient(to bottom, rgba(46, 46, 172, 0.63), rgba(151, 44, 201, 0.589));
+            	border:5px solid grey;
+
+            	          	
+            	
+            }
+            .requestbox{
+            	margin: 10px; 
+            	padding: 5px; 
+            	background-color: red;            	
+            	border:2px solid grey;
+
+            }
+            .reqlist{
+            	font-size: 20px;
+            	margin-left: 10%;
+
+            }
+            .buttonstoright{
+            	margin-left:30%;
+            }
+
+            #users {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#users td, #users th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#users tr:nth-child(even){background-color: #f2f2f2;}
+
+#users tr:hover {background-color: #ddd;}
+
+#users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 20px;
+  text-align: left;
+  background-color: #9d4646d9;
+  color: white;
+  font-family: Lucida Console;
+}
+</style>
+</head>
+<body>
+
+<body>
+<div  id="myDIV" >
+          <a href="Dashboard.html" > <button style="background-color: black;
+            margin-left: 100px;
+            margin-top: 20px;
+  border: none;
+  color: white;
+  padding: 14px 16px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 100%"><i class="fa fa-home"></i></button></a>
+           <span class="h2" id="head" align="center" >RESPOND TO REQUESTS......</span><br><br>
+
+
+  <table id="users">
+  <tr>
+    <th>Request NO.</th>
+    <th>Requested By:</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td><span class="badge  badge-light">1</span></td>
+    <td><span class="reqlist">REQUEST From User NO. 002AAI20_XLR..!! ...Requested Updating</span></td>
+    <td>
+    	<span class="buttonstoright">	
+	          <button id="btn1" type="submit" onclick="myFunction1()" style="background-color:#db524a">Accept</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	          <button id="btn2" type="submit" onclick="myFunction2()" style ="background-color:#59b957">Decline</button>
+	    </span>
+	</td>
+  </tr>
+  <tr>
+    <td><span class="badge  badge-light">2</span></td>
+    <td><span class="reqlist">REQUEST From User NO. 002AAI22_XLR..!! ...Requested Updating</span></td>
+    <td><span class="buttonstoright">	
+	          <button id="btn1" type="submit" onclick="myFunction1()" style="background-color:#db524a">Accept</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	          <button id="btn2" type="submit" onclick="myFunction2()" style ="background-color:#59b957">Decline</button>
+	    </span>
+	</td>
+  </tr>
+  <tr>
+    <td><span class="badge  badge-light">3</span></td>
+    <td><span class="reqlist">REQUEST From User NO. 002AAI30_XLR..!! ...Requested Updating</span></td>
+    <td><span class="buttonstoright">	
+	          <button id="btn1" type="submit" onclick="myFunction1()" style="background-color:#db524a">Accept</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	          <button id="btn2" type="submit" onclick="myFunction2()" style ="background-color:#59b957">Decline</button>
+	    </span>
+	</td>
+  </tr>
+  <tr>
+    <td><span class="badge  badge-light">4</span></td>
+    <td><span class="reqlist">REQUEST From User NO. 002AAI34_XLR..!! ...Requested Updating</span></td>
+    <td><span class="buttonstoright">	
+	          <button id="btn1" type="submit" onclick="myFunction1()" style="background-color:#db524a">Accept</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	          <button id="btn2" type="submit" onclick="myFunction2()" style ="background-color:#59b957">Decline</button>
+	    </span>
+	</td>
+  </tr>
+    <tr>
+    <td><span class="badge  badge-light">5</span></td>
+    <td><span class="reqlist">REQUEST From User NO. 071AAI12_XLR..!! ...Requested Updating</span></td>
+    <td><span class="buttonstoright">	
+	          <button id="btn1" type="submit" onclick="myFunction1()" style="background-color:#db524a">Accept</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	          <button id="btn2" type="submit" onclick="myFunction2()" style ="background-color:#59b957">Decline</button>
+	    </span>
+	</td>
+  </tr>
+  <tr>
+    <td><span class="badge  badge-light">6</span></td>
+    <td><span class="reqlist">REQUEST From User NO. 065AAI43_XLR..!! ...Requested Adding</span></td>
+    <td><span class="buttonstoright">	
+	          <button id="btn1" type="submit" onclick="myFunction1()" style="background-color:#db524a">Accept</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	          <button id="btn2" type="submit" onclick="myFunction2()" style ="background-color:#59b957">Decline</button>
+	    </span>
+	</td>
+  </tr>
+  <tr>
+    <td><span class="badge  badge-light">7</span></td>
+    <td><span class="reqlist">REQUEST From User NO. 063AAI32_XLR..!! ...Requested Updating</span></td>
+    <td><span class="buttonstoright">	
+	          <button id="btn1" type="submit" onclick="myFunction1()" style="background-color:#db524a">Accept</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	          <button id="btn2" type="submit" onclick="myFunction2()" style ="background-color:#59b957">Decline</button>
+	    </span>
+	</td>
+  </tr>
+  <tr>
+    <td><span class="badge  badge-light">8</span></td>
+    <td><span class="reqlist">REQUEST From User NO. 070AAI24_XLR..!! ...Requested Updating</span></td>
+    <td><span class="buttonstoright">	
+	          <button id="btn1" type="submit" onclick="myFunction1()" style="background-color:#db524a">Accept</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	          <button id="btn2" type="submit" onclick="myFunction2()" style ="background-color:#59b957">Decline</button>
+	    </span>
+	</td>
+  </tr>
+  <tr>
+    <td><span class="badge  badge-light">9</span></td>
+    <td><span class="reqlist">REQUEST From User NO. 001AAI29_XLR..!! ...Requested Updating</span></td>
+    <td><span class="buttonstoright">	
+	          <button id="btn1" type="submit" onclick="myFunction1()" style="background-color:#db524a">Accept</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	          <button id="btn2" type="submit" onclick="myFunction2()" style ="background-color:#59b957">Decline</button>
+	    </span>
+	</td>
+  </tr>
+  <tr>
+    <td><span class="badge  badge-light">10</span></td>
+    <td><span class="reqlist">REQUEST From User NO. 030AAI11_XLR..!! ...Requested Adding</span></td>
+    <td><span class="buttonstoright">	
+	          <button id="btn1" type="submit" onclick="myFunction1()" style="background-color:#db524a">Accept</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	          <button id="btn2" type="submit" onclick="myFunction2()" style ="background-color:#59b957">Decline</button>
+	    </span>
+	</td>
+  </tr>
+  <tr>
+    <td><span class="badge  badge-light">11</span></td>
+    <td><span class="reqlist">REQUEST From User NO. 003AAI08_XLR..!! ...Requested Adding</span></td>
+    <td><span class="buttonstoright">	
+	          <button id="btn1" type="submit" onclick="myFunction1()" style="background-color:#db524a">Accept</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	          <button id="btn2" type="submit" onclick="myFunction2()" style ="background-color:#59b957">Decline</button>
+	    </span>
+	</td>
+  </tr>
+  <tr>
+    <td><span class="badge  badge-light">12</span></td>
+    <td><span class="reqlist">REQUEST From User NO. 002AAI05_XLR..!! ...Requested Updating</span></td>
+    <td><span class="buttonstoright">	
+	          <button id="btn1" type="submit" onclick="myFunction1()" style="background-color:#db524a">Accept</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	          <button id="btn2" type="submit" onclick="myFunction2()" style ="background-color:#59b957">Decline</button>
+	    </span>
+	</td>
+  </tr>
+
+
+</table>
+
+
+   
+</div>
+
+
+</body>
+
+
+
+<script>
+function myFunction1() {
+  alert("The Request has been accepted......");
+
+ 
+}
+</script>
+
+<script>
+function myFunction2() {
+  alert("The Request has been declined......");
+
+}
+</script>
+
+</html>
+</body>
+</html>

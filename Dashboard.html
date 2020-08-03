@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<head>
+<title>AAI Inventory System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/style-responsive.css" rel="stylesheet"/>
+
+ <script src='js/fontawesomekit1.js'></script>
+ <script src='js/fontawesomekit2.js'></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section id="container">
+<!--header start-->
+<header class="header fixed-top clearfix">
+<!--logo start-->
+<div class="brand">
+    <a href="Dashboard.html" class="logo" >
+        <div>
+        <img src="images/AAI_logo.png" style="width:5vw; height: 3vw; position: absolute; "> 
+        </div>
+        <div style="text-align: center;font-weight: bold; position:absolute; left:75px; font-size: 0.8vw;">Airport Authority Of India</div>
+    </a>
+    <div class="sidebar-toggle-box" >
+        <div class="fa fa-bars" ></div>
+    </div>
+</div>
+<!--logo end-->
+<div class="nav notify-row" id="top_menu">
+    <!--  notification start -->
+    <ul class="nav top-menu">
+        <!-- settings start -->
+        <!-- inbox dropdown end -->
+        <!-- notification dropdown start-->
+        <li id="header_notification_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                <i class="fa fa-bell"></i>
+                <span class="badge bg-warning">3</span>
+            </a>
+            <ul class="dropdown-menu extended notification">
+                <li>
+                    <p>Notifications</p>
+                </li>
+                <li>
+                    <div class="alert alert-info clearfix">
+                        <span class="alert-icon"><i class="fa fa-bolt"></i></span>
+                        <div class="noti-info">
+                            <a href="#">17 Requests Pending</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="alert alert-danger clearfix">
+                        <span class="alert-icon"><i class="fa fa-bolt"></i></span>
+                        <div class="noti-info">
+                            <a href="#">28 Products Have Expired</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="alert alert-info clearfix">
+                        <span class="alert-icon"><i class="fa fa-bolt"></i></span>
+                        <div class="noti-info">
+                            <a href="#">130 Products Are near To Expire</a>
+                        </div>
+                    </div>
+                </li>
+
+                
+
+            </ul>
+        </li>
+
+        <!-- notification dropdown end -->
+    </ul>
+
+    <!--  notification end -->
+</div>
+<div class="top-nav clearfix">
+    <!--search & user info start-->
+    <ul class="nav pull-right top-menu">
+        <li>
+            <input type="text" class="form-control search" placeholder=" Search">
+        </li>
+        <!-- user login dropdown start-->
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <span class="username">Admin</span>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu extended logout">
+                <li><a href="404.html"><i class="fa fa-suitcase"></i>Profile</a></li>
+                <li><a href="404.html"><i class="fa fa-cog"></i> Settings</a></li>
+                <li><a href="index.html"><i class="fa fa-key"></i> Log Out</a></li>
+            </ul>
+        </li>
+        <!-- user login dropdown end -->
+       
+    </ul>
+    <!--search & user info end-->
+</div>
+</header>
+<!--header end-->
+<!--sidebar start-->
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        <!-- sidebar menu start-->
+        <div class="leftside-navigation">
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li>
+                    <a class="active" href="Dashboard.html">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="image-link" href="images/add.png" >
+                        
+                          <span class="glyphicon glyphicon-plus" style="color:white;font-size: 20px;"></span>
+                         <span style="font-size: 20px;">Add Inventory    </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="image-link" href="images/update.png">
+                        <i class="far fa-edit"></i>
+                        <span>Update Inventory    </span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="#">
+                        <i class="fas fa-fast-forward"></i>
+                        <span>Look At The Statistics    </span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="#">Stocks In</a></li>
+						<li><a href="#">Stocks Out</a></li>
+                        <li><a href="#">Inventories Nearing to Service</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="requestpop-up.html" target="main-content">
+                        
+                        <i class="fa fa-bell " id="ani3"></i>
+                        <span class="badge fa-1x">12</span>
+                        </span>
+                        <span>NEW REQUESTS    </span>
+                    </a>
+                </li>
+                
+                
+            </ul>            </div>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<!--sidebar end-->
+<!--main content start-->
+<section id="main-content">
+	<section class="wrapper">
+		<!-- //market-->
+		<div  class="market-updates">
+			<div id="ani1" class="col-md-3 market-update-gd">
+				<div  class="market-update-block clr-block-2">
+					<div class="col-md-4 market-update-right">
+						<i class='fas fa-box' style='font-size:48px;color:white'></i>
+					</div>
+					 <div  class="col-md-8 market-update-left">
+					 <h4>Stock IN : </h4>
+					<h3>13,500</h3>
+					
+				  </div>
+				  <div class="clearfix"> </div>
+				</div>
+			</div>
+			<div id="ani2" class="col-md-3 market-update-gd">
+				<div class="market-update-block clr-block-1">
+					<div class="col-md-4 market-update-right">
+						<i class='fas fa-dolly' style='font-size:48px;color:white'></i>
+					</div>
+					<div class="col-md-8 market-update-left">
+					<h4>STOCK OUT :</h4>
+						<h3>1,250</h3>
+						
+					</div>
+				  <div class="clearfix"> </div>
+				</div>
+			</div>
+			
+			
+		   <div class="clearfix"> </div>
+		</div>	
+
+				<div  class="col-md-8 stats-info stats-last widget-shadow">
+						<div id="zoom" class="stats-last-agile">
+							<table class="table stats-table ">
+								<thead>
+									<tr>
+										<th>S.NO</th>
+										<th>INVENTORY TYPE</th>
+										<th>STATUS</th>
+										<th>UP-TO-DATE PROGRESS</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Security Devices</td>
+										<td><span class="label label-success">In progress</span></td>
+										<td><h5>85% <i class="fa fa-level-up"></i></h5></td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Utilities</td>
+										<td><span class="label label-warning">New</span></td>
+										<td><h5>35% <i class="fa fa-level-up"></i></h5></td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Emergency</td>
+										<td><span class="label label-danger">Overdue</span></td>
+										<td><h5 class="down">40% <i class="fa fa-level-down"></i></h5></td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>Premium</td>
+										<td><span class="label label-info">Out of stock</span></td>
+										<td><h5>100% <i class="fa fa-level-up"></i></h5></td>
+									</tr>
+									</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+
+
+
+
+</section>
+ <!-- footer -->
+		  <div class="footer">
+			<div class="wthree-copyright">
+			  <p>This Is Not For Public Use </p>
+			</div>
+		  </div>
+  <!-- / footer -->
+</section>
+<button class="open-button" onclick="openForm()">Look At Your Complains</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1 style="margin-bottom: 20px;font-family: Arial;font-weight: bold;">Complains</h1>
+     <div class="row border-r" style="background-color:red;margin:3px;padding:5px;height:40px;">Complain One</div>
+      <div class="row" style="background-color:blue;margin:3px;padding:5px;height: 40px;">Complain Two</div>
+        <div class="row" style="background-color:red;margin:3px;padding:5px;height: 40px;">Complain Three</div>
+
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<!--main content end-->
+</section>
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script src="js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/jquery.slimscroll.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
+<script src="js/jquery.scrollTo.js"></script>
+<!-- morris JavaScript -->	
+</body>
+</html>
